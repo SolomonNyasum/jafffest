@@ -2676,7 +2676,7 @@ column-count: 1;
 GLOBAL MOBILE OPTIMIZATION
 =============================== */
 
-/* Prevent horizontal scroll*/
+/* Prevent horizontal scroll
 body {
 overflow-x: hidden;
 }
