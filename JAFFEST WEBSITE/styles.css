@@ -2424,8 +2424,6 @@ padding:60px;
 
 }
 
-
-
 .gallery-item{
 
 width:100%;
@@ -2473,7 +2471,7 @@ font-size:40px;
 cursor:pointer;
 
 }
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE DESIGN*/ 
 @media (max-width: 1000px){
 
 .hero-content h1{
@@ -2672,5 +2670,200 @@ width: 100%;
 }
 .masonry-gallery {
 column-count: 1;
+}
+}
+/* ===============================
+GLOBAL MOBILE OPTIMIZATION
+=============================== */
+
+/* Prevent horizontal scroll 
+body {
+overflow-x: hidden;
+}
+
+/* Better container spacing */
+section:not(.hero){
+padding: 80px 20px;
+}
+/* ===============================
+TABLETS (<= 1024px)
+=============================== */
+@media (max-width: 1024px){
+
+/* Reduce padding everywhere */
+.navbar{
+padding:15px 30px;
+}
+
+/* HERO */
+.hero-content h1{
+font-size:40px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+/* GRID FIXES */
+.stats-container,
+.highlight-grid,
+.why-grid,
+.audience-stats{
+grid-template-columns:repeat(2,1fr);
+}
+
+/* GALLERY FIX */
+.masonry-gallery{
+column-count:2;
+}
+
+/* VIP SECTION */
+.vip-container{
+grid-template-columns:1fr;
+gap:40px;
+text-align:center;
+}
+
+}
+
+/* ===============================
+MOBILE (<= 768px)
+=============================== */
+@media (max-width: 768px){
+
+/* NAV FIX */
+.navbar{
+padding:15px 20px;
+}
+
+/* HERO */
+.hero{
+height:auto;
+min-height:85vh;
+}
+
+.hero-content{
+width:95%;
+}
+
+.hero-content h1{
+font-size:28px;
+}
+
+.hero-content p{
+font-size:15px;
+}
+
+/* BUTTON STACK */
+.hero-buttons{
+flex-direction:column;
+gap:12px;
+}
+
+.primary-btn,
+.secondary-btn{
+width:100%;
+}
+
+/* REMOVE ARROWS */
+.controls{
+display:none;
+}
+
+/* GRID STACK */
+.stats-container,
+.details-grid,
+.experience-grid,
+.vendor-grid,
+.ticket-grid,
+.featured-grid,
+.benefits-grid,
+.vendor-cat-grid,
+.vendor-packages-grid,
+.highlight-grid,
+.why-grid,
+.sponsor-grid,
+.audience-stats{
+grid-template-columns:1fr !important;
+}
+
+/* FIX BIG SECTIONS */
+.vip-container,
+.about-container,
+.organizer-container{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+/* GALLERY FIX */
+.masonry-gallery{
+column-count:1;
+}
+
+/* PARALLAX FIX (important for mobile) */
+.parallax{
+background-attachment:scroll;
+height:350px;
+}
+
+/* TICKETS */
+.ticket-card{
+padding:25px 20px;
+}
+
+/* FOOTER */
+.footer{
+padding:60px 20px;
+}
+
+}
+
+/* ===============================
+SMALL PHONES (<= 480px)
+=============================== */
+@media (max-width: 480px){
+
+    .hero-content h1{
+font-size:24px;
+}
+
+.hero-content p{
+font-size:14px;
+}
+
+/* TEXT SCALE */
+h2{
+font-size:28px !important;
+}
+
+p{
+font-size:14px;
+}
+
+/* BUTTON FULL WIDTH */
+.primary-btn,
+.secondary-btn{
+width:100%;
+padding:12px;
+}
+
+/* COUNTDOWN */
+.time-box{
+min-width:80px;
+padding:20px;
+}
+
+.time-box span{
+font-size:28px;
+}
+
+/* GALLERY */
+.gallery{
+padding:60px 15px;
+}
+
+/* FIX SPACING */
+section:not(.hero){
+padding: 80px 20px;
 }
 }
